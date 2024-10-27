@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>QuizByte</title>
+    
+</head>
+<body>
+    <div id="quiz-app" class="animate__animated animate__fadeIn">
+
+        <!-- Welcome Page -->
+        <section class="center-card quiz-start" id="quiz-start">
+            <h1>Welcome to Quiz Byte</h1>
+            <p>Get ready to test your knowledge with our fun quizzes!</p>
+            <button class="button button--primary" id="start-quiz">Start</button>
+        </section>
+
+        <!-- Quiz Selection Page -->
+        <section class="center-card quiz-selection" id="quiz-selection" style="display: none;">
+            <h1>Select a Quiz</h1>
+            <div class="quiz-list">
+                <div class="quiz-item" data-quiz="0">DBMS (Database Management Systems)</div>
+                <div class="quiz-item" data-quiz="1">Computer Networks</div>
+                <div class="quiz-item" data-quiz="2">HTML</div>
+                <div class="quiz-item" data-quiz="3">Operating Systems</div>
+            </div>
+        </section>
+
+        <!-- Quiz Question Page (hidden initially) -->
+        <section class="center-card quiz-question" id="quiz-question" style="display: none;">
+            <div class="progress">
+                <span class="progress__text">Question <span id="current-question">1</span> of 10</span>
+                <div class="progress__bar">
+                    <div class="progress__bar--full" id="progress-bar"></div>
+                </div>
+            </div>
+            <div class="question__timer">
+                <svg class="question__timer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 1a1 1 0 1 0 0 2 9 9 0 1 1-9 9 1 1 0 1 0-2 0A11 11 0 1 0 12 1zm-1 6a1 1 0 0 1 2 0v4a1 1 0 0 1-.553.894l-3 1.5a1 1 0 0 1-.894-1.788L11 10.618V7z"/>
+                </svg>
+                <span class="question__timer-time" id="timer"></span>
+            </div>
+            <h2 class="question__title" id="question-title">Sample Question?</h2>
+            <div class="question__options">
+                <button class="button question__option" data-answer="A">Option A</button>
+                <button class="button question__option" data-answer="B">Option B</button>
+                <button class="button question__option" data-answer="C">Option C</button>
+                <button class="button question__option" data-answer="D">Option D</button>
+            </div>
+            <div class="question__actions">
+                <button class="button button--secondary" id="skip-question">Skip</button>
+            </div>
+        </section>
+
+        <!-- Quiz Result Page (hidden initially) -->
+        <section class="center-card quiz-result" id="quiz-result" style="display: none;">
+            <h2 class="result__title">Quiz Completed!</h2>
+            <p class="result__score">Your Score: <span id="score">0</span>/10</p>
+            <div class="result__actions">
+                <button class="button button--primary" id="restart-quiz">Restart Quiz</button>
+            </div>
+        </section>
+
+        <!-- Overlay for Time's Up -->
+        <div class="overlay" id="question-overlay">
+            <div class="overlay-content">
+                <h2>Time's Up!</h2>
+                <p>The quiz has ended.</p>
+                <button class="overlay-close" id="close-overlay">&times;</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
