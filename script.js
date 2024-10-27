@@ -1,4 +1,3 @@
-
         document.addEventListener('DOMContentLoaded', function () {
             const quizStart = document.getElementById('quiz-start');
             const quizSelection = document.getElementById('quiz-selection');
@@ -21,64 +20,65 @@
                 {
                     title: "DBMS (Database Management Systems)",
                     questions: [
-                        { question: "What does SQL stand for?", options: ["Structured Query Language", "Simple Query Language", "Standard Query Language", "Sequential Query Language"], correct: "A" },
-                        { question: "Which of the following is a NoSQL database?", options: ["MySQL", "Oracle", "MongoDB", "PostgreSQL"], correct: "C" },
-                        { question: "What is a primary key in a database?", options: ["A unique identifier for each record", "A foreign key", "A non-unique index", "A temporary key"], correct: "A" },
-                        { question: "Which SQL command is used to retrieve data from a database?", options: ["SELECT", "INSERT", "DELETE", "UPDATE"], correct: "A" },
-                        { question: "What is normalization in DBMS?", options: ["Organizing data to reduce redundancy", "Creating backup copies", "Securing the database", "Speeding up query execution"], correct: "A" },
-                        { question: "Which type of join returns all records when there is a match in either left or right table?", options: ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN"], correct: "D" },
-                        { question: "What is a foreign key?", options: ["A key used to encrypt data", "A key that links two tables", "A key that identifies a unique record", "A temporary key used during queries"], correct: "B" },
-                        { question: "Which SQL function is used to count the number of rows?", options: ["COUNT()", "SUM()", "AVG()", "MAX()"], correct: "A" },
-                        { question: "What is an index in a database?", options: ["A pointer to data in a table", "A type of data encryption", "A command to retrieve data", "A unique identifier for each record"], correct: "A" },
-                        { question: "What does ACID stand for in DBMS?", options: ["Atomicity, Consistency, Isolation, Durability", "Availability, Consistency, Isolation, Durability", "Atomicity, Coherence, Integrity, Durability", "Atomicity, Consistency, Integrity, Durability"], correct: "A" }
+                        { question: "What does SQL stand for?", options: ["Simple Query Language", "Structured Query Language", "Standard Query Language", "Sequential Query Language"], correct: "B" },
+                        { question: "Which of the following is a NoSQL database?", options: ["MongoDB", "Oracle", "PostgreSQL", "MySQL"], correct: "A" },
+                        { question: "What is a primary key in a database?", options: ["A temporary key", "A foreign key", "A unique identifier for each record", "A non-unique index"], correct: "C" },
+                        { question: "Which SQL command is used to retrieve data from a database?", options: ["INSERT", "DELETE", "UPDATE", "SELECT"], correct: "D" },
+                        { question: "What is normalization in DBMS?", options: ["Creating backup copies", "Speeding up query execution", "Organizing data to reduce redundancy", "Securing the database"], correct: "C" },
+                        { question: "Which type of join returns all records when there is a match in either left or right table?", options: ["FULL JOIN", "LEFT JOIN", "INNER JOIN", "RIGHT JOIN"], correct: "A" },
+                        { question: "What is a foreign key?", options: ["A key that identifies a unique record", "A key used to encrypt data", "A key that links two tables", "A temporary key used during queries"], correct: "C" },
+                        { question: "Which SQL function is used to count the number of rows?", options: ["AVG()", "COUNT()", "MAX()", "SUM()"], correct: "B" },
+                        { question: "What is an index in a database?", options: ["A command to retrieve data", "A unique identifier for each record", "A type of data encryption", "A pointer to data in a table"], correct: "D" },
+                        { question: "What does ACID stand for in DBMS?", options: ["Atomicity, Coherence, Integrity, Durability", "Atomicity, Consistency, Isolation, Durability", "Atomicity, Consistency, Integrity, Durability", "Availability, Consistency, Isolation, Durability"], correct: "B" }
                     ]
                 },
                 {
                     title: "Computer Networks",
                     questions: [
-                        { question: "What does IP stand for in networking?", options: ["Internet Protocol", "Internal Protocol", "Internet Process", "Internal Process"], correct: "A" },
-                        { question: "What is the primary function of a router?", options: ["To connect different networks", "To encrypt data", "To manage a single network", "To analyze network traffic"], correct: "A" },
-                        { question: "Which layer of the OSI model is responsible for routing packets?", options: ["Data Link", "Transport", "Network", "Application"], correct: "C" },
-                        { question: "What does DNS stand for?", options: ["Domain Name System", "Dynamic Name Service", "Digital Network Service", "Domain Network System"], correct: "A" },
-                        { question: "Which protocol is used to securely transfer files over the Internet?", options: ["HTTP", "FTP", "SMTP", "SFTP"], correct: "D" },
-                        { question: "What is a MAC address?", options: ["A unique identifier assigned to a network interface card", "A type of IP address", "A memory address used in computers", "A protocol for email"], correct: "A" },
-                        { question: "What does LAN stand for?", options: ["Local Area Network", "Logical Area Network", "Large Area Network", "Light Area Network"], correct: "A" },
-                        { question: "Which protocol is used for email transmission?", options: ["HTTP", "FTP", "SMTP", "SNMP"], correct: "C" },
-                        { question: "What does TCP stand for?", options: ["Transmission Control Protocol", "Transfer Control Protocol", "Transmission Connection Protocol", "Transfer Connection Protocol"], correct: "A" },
-                        { question: "Which of the following is used to break data into packets for transmission over a network?", options: ["Router", "Switch", "Hub", "Packet Sniffer"], correct: "A" }
+                        { question: "What does IP stand for in networking?", options: ["Internet Process", "Internal Process", "Internal Protocol", "Internet Protocol"], correct: "D" },
+                        { question: "What is the primary function of a router?", options: ["To analyze network traffic", "To connect different networks", "To manage a single network", "To encrypt data"], correct: "B" },
+                        { question: "Which layer of the OSI model is responsible for routing packets?", options: ["Network", "Application", "Transport", "Data Link"], correct: "A" },
+                        { question: "What does DNS stand for?", options: ["Dynamic Name Service", "Digital Network Service", "Domain Name System", "Domain Network System"], correct: "C" },
+                        { question: "Which protocol is used to securely transfer files over the Internet?", options: ["HTTP", "FTP", "SFTP", "SMTP"], correct: "C" },
+                        { question: "What is a MAC address?", options: ["A memory address used in computers", "A unique identifier assigned to a network interface card", "A protocol for email", "A type of IP address"], correct: "B" },
+                        { question: "What does LAN stand for?", options: ["Logical Area Network", "Large Area Network", "Light Area Network", "Local Area Network"], correct: "D" },
+                        { question: "Which protocol is used for email transmission?", options: ["SMTP", "SNMP", "HTTP", "FTP"], correct: "A" },
+                        { question: "What does TCP stand for?", options: ["Transfer Control Protocol", "Transmission Control Protocol", "Transmission Connection Protocol", "Transfer Connection Protocol"], correct: "B" },
+                        { question: "Which of the following is used to break data into packets for transmission over a network?", options: ["Router", "Switch", "Packet Sniffer", "Hub"], correct: "A" }
                     ]
                 },
                 {
                     title: "HTML",
                     questions: [
-                        { question: "What does HTML stand for?", options: ["HyperText Markup Language", "HyperText Markdown Language", "Hyper Tool Markup Language", "Hyperlink and Text Markup Language"], correct: "A" },
-                        { question: "Which tag is used to create a hyperlink in HTML?", options: ["<a>", "<link>", "<href>", "<src>"], correct: "A" },
-                        { question: "What does the <br> tag do in HTML?", options: ["Creates a line break", "Makes text bold", "Inserts an image", "Creates a horizontal line"], correct: "A" },
-                        { question: "Which tag is used to create an unordered list in HTML?", options: ["<ul>", "<ol>", "<li>", "<list>"], correct: "A" },
-                        { question: "What attribute is used to specify an image's source in HTML?", options: ["src", "href", "link", "source"], correct: "A" },
-                        { question: "Which HTML tag is used to define a table row?", options: ["<tr>", "<td>", "<th>", "<table>"], correct: "A" },
-                        { question: "What is the correct HTML tag for inserting a line break?", options: ["<br>", "<lb>", "<break>", "<line>"], correct: "A" },
+                        { question: "What does HTML stand for?", options: ["HyperText Markdown Language", "HyperText Markup Language", "Hyper Tool Markup Language", "Hyperlink and Text Markup Language"], correct: "B" },
+                        { question: "Which tag is used to create a hyperlink in HTML?", options: ["<link>", "<href>", "<a>", "<src>"], correct: "C" },
+                        { question: "What does the <br> tag do in HTML?", options: ["Makes text bold", "Creates a horizontal line", "Inserts an image", "Creates a line break"], correct: "D" },
+                        { question: "Which tag is used to create an unordered list in HTML?", options: ["<li>", "<ul>", "<ol>", "<list>"], correct: "B" },
+                        { question: "What attribute is used to specify an image's source in HTML?", options: ["link", "src", "source", "href"], correct: "B" },
+                        { question: "Which HTML tag is used to define a table row?", options: ["<td>", "<tr>", "<table>", "<th>"], correct: "B" },
+                        { question: "What is the correct HTML tag for inserting a line break?", options: ["<br>", "<lb>", "<line>", "<break>"], correct: "A" },
                         { question: "Which of the following HTML elements is used for creating a dropdown list?", options: ["<select>", "<input>", "<textarea>", "<option>"], correct: "A" },
-                        { question: "What does the <title> tag do?", options: ["Sets the title of the webpage in the browser's title bar", "Sets the title of the document in the body", "Creates a heading", "Adds a title to an image"], correct: "A" },
-                        { question: "Which HTML attribute is used to define inline styles?", options: ["style", "class", "id", "font"], correct: "A" }
+                        { question: "What does the <title> tag do?", options: ["Sets the title of the document in the body", "Adds a title to an image", "Sets the title of the webpage in the browser's title bar", "Creates a heading"], correct: "C" },
+                        { question: "Which HTML attribute is used to define inline styles?", options: ["font", "style", "class", "id"], correct: "B" }
                     ]
                 },
                 {
                     title: "Operating Systems",
                     questions: [
-                        { question: "What is the primary purpose of an operating system?", options: ["To manage hardware and software resources", "To create software applications", "To design computer hardware", "To run internet browsers"], correct: "A" },
-                        { question: "Which of the following is an open-source operating system?", options: ["Windows", "Linux", "macOS", "iOS"], correct: "B" },
-                        { question: "What does the term 'multitasking' refer to in an operating system?", options: ["Running multiple programs simultaneously", "Switching between user accounts", "Using multiple displays", "Installing software"], correct: "A" },
-                        { question: "Which of these is a type of operating system?", options: ["Real-time", "Fixed-time", "Runtime", "Compile-time"], correct: "A" },
-                        { question: "What does the acronym 'GUI' stand for in the context of operating systems?", options: ["Graphical User Interface", "General User Interface", "Graphical Universal Interface", "General User Interaction"], correct: "A" },
-                        { question: "Which operating system feature allows users to have multiple applications open at the same time?", options: ["Multitasking", "Multi-threading", "Multi-user", "Multiprocessing"], correct: "A" },
-                        { question: "What is virtual memory?", options: ["A technique that uses a portion of the hard drive as RAM", "A type of physical memory", "A file storage system", "A method of securing data"], correct: "A" },
-                        { question: "Which command is used to list files in a directory in Linux?", options: ["ls", "list", "dir", "show"], correct: "A" },
-                        { question: "What is the kernel in an operating system?", options: ["The core component that manages system resources", "A type of file system", "A user interface", "A hardware device"], correct: "A" },
-                        { question: "Which of the following is not an operating system?", options: ["Linux", "Windows", "Oracle", "macOS"], correct: "C" }
+                        { question: "What is the primary purpose of an operating system?", options: ["To create software applications", "To manage hardware and software resources", "To run internet browsers", "To design computer hardware"], correct: "B" },
+                        { question: "Which of the following is an open-source operating system?", options: ["Linux", "macOS", "iOS", "Windows"], correct: "A" },
+                        { question: "What does the term 'multitasking' refer to in an operating system?", options: ["Switching between user accounts", "Running multiple programs simultaneously", "Using multiple displays", "Installing software"], correct: "B" },
+                        { question: "Which of these is a type of operating system?", options: ["Fixed-time", "Real-time", "Runtime", "Compile-time"], correct: "B" },
+                        { question: "What does the acronym 'GUI' stand for in the context of operating systems?", options: ["Graphical Universal Interface", "Graphical User Interface", "General User Interface", "General User Interaction"], correct: "B" },
+                        { question: "Which operating system feature allows users to have multiple applications open at the same time?", options: ["Multi-threading", "Multiprocessing", "Multi-user", "Multitasking"], correct: "D" },
+                        { question: "What is virtual memory?", options: ["A method of securing data", "A technique that uses a portion of the hard drive as RAM", "A type of physical memory", "A file storage system"], correct: "B" },
+                        { question: "Which command is used to list files in a directory in Linux?", options: ["ls", "show", "dir", "list"], correct: "A" },
+                        { question: "What is the kernel in an operating system?", options: ["A type of file system", "A hardware device", "The core component that manages system resources", "A user interface"], correct: "C" },
+                        { question: "Which of the following is not an operating system?", options: ["macOS", "Windows", "Oracle", "Linux"], correct: "C" }
                     ]
                 }
             ];
+            
     
             
             let currentQuizIndex = null;
@@ -165,7 +165,7 @@
             function showResult() {
                 clearInterval(timerInterval);
                 quizQuestion.style.display = 'none';
-                Swal.fire({
+                Swal.fire({   // Sweet Alert2
                     title: 'Quiz Completed!',
                     text: `Your Score: ${score}/10`,
                     icon: 'success',
